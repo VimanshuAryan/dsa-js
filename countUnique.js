@@ -1,3 +1,5 @@
+//count the unique elements in the given array
+
 const arr = [1,1,2,2,3,4,4,5,6,7,8,8,9,9,9,9]
 
 const countUnique = (arr) => {
