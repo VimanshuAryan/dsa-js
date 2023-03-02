@@ -22,3 +22,23 @@ const prime = array.filter((num,i,array) => {
 })
 
 console.log(prime)
+const arr1 = [1,2,3,4]
+
+const sum = arr1.reduce((acc,curr) => {
+    return acc+curr;
+},0)
+
+console.log(sum)
+const names = ["Alice", "Bob", "Tiff", "Bruce", "Alice"];
+
+const countedNames = names.reduce((allNames, name) => {
+    //nullish coalescing operator ??
+  const currCount = allNames[name] ?? 0;
+  return {
+    //spread operator
+    ...allNames,
+    [name]: currCount + 1,
+  };
+}, {});
+// countedNames is:
+// { 'Alice': 2, 'Bob': 1, 'Tiff': 1, 'Bruce': 1 }
